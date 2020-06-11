@@ -231,6 +231,26 @@ while 1:
     print(f'Your current balance is: {money}')
 ```
 ---
+<
+deposit = 0
+while True:
+    print('Please type D or W or Q')
+    inp = input().lower()
+    if inp == 'd':
+        print('Please add the amount to be deposited')
+        deposit += int(input())
+    elif inp == 'w':
+        print('Please type the amount to be withdrawn')
+        withdraw = int(input())
+        if deposit> withdraw:
+            deposit -= withdraw
+        else:
+            print('Insufficient bal please withdraw amount that you have ')
+            continue
+    elif inp == 'q':
+        print(f'Thanks for banking with ous your available balance is {deposit}')
+        break
+>
 
 [**_go to previous day_**](https://github.com/darkprinx/100-plus-Python-programming-exercises-extended/blob/master/Status/Day%204.md "Day 4")
 
